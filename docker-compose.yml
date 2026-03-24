@@ -1,0 +1,23 @@
+services:
+  web:
+    build: .
+    image: ics-ack-agent:latest
+    container_name: ics-ack-agent
+    ports:
+      - "8080:80"
+#    volumes:
+#      - ./:/var/www/html
+    environment:
+      SMTP_HOST: smtp
+      SMTP_PORT: 25
+      SMTP_FROM_EMAIL: no-reply@example.com
+      SMTP_FROM_NAME: Acknowledgement Agent
+    depends_on:
+      - smtp
+
+  smtp:
+    image: rnwood/smtp4dev:latest
+    container_name: ics-ack-smtp
+    ports:
+      - "1025:25"
+      - "8025:80"
