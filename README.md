@@ -2,7 +2,7 @@
 
 ## Disclaimer, terms, legal notice, license terms
 ```
-Refer Author, JetBrains AI Assistant for code development and all the dependencies including https://github.com/rnwood/smtp4dev, PHP, Docker, Composer, PHPMailer, etc.
+Refer Author, JetBrains AI Assistant for code development and all the dependencies including https://github.com/rnwood/smtp4dev, Apache, PHP, Docker, Composer, PHPMailer, etc.
 ```
 
 ## !Warning!
